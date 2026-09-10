@@ -1,0 +1,302 @@
+[08/10 20:14:22.593309][info][28800][DeviceManager.cpp:25] Current found device(s): (1)
+[08/10 20:14:22.593346][info][28800][DeviceManager.cpp:34] 	- Name: FemtoBolt, PID: 0x066b, SN/ID: CL8S16100V3, Connection: USB3.1
+[08/10 20:14:22.593351][info][28800][DeviceManager.cpp:405] Enable net device enumeration: true
+[08/10 20:14:23.612014][info][28800][DeviceManager.cpp:25] Current device(s) list: (1)
+[08/10 20:14:23.612064][info][28800][DeviceManager.cpp:34] 	- Name: FemtoBolt, PID: 0x066b, SN/ID: CL8S16100V3, Connection: USB3.1
+[08/10 20:14:23.828581][info][28800][DeviceManager.cpp:199] Device created successfully! Name: Femto Bolt, PID: 0x066b, SN/ID: CL8S16100V3 FW: 1.1.3
+[08/10 20:14:23.829615][info][28800][Pipeline.cpp:54] [CL8S16100V3] Pipeline created with device: {name: Femto Bolt, sn: CL8S16100V3}, @0x2BFE1B98050
+[08/10 20:14:23.855301][warning][28800][ObException.cpp:26] A recoverable_exception has occurred!
+ - where: StreamProfile.cpp(349)
+ - msg: Invalid input, No matched video stream profile found!
+ - type: INVALID_VALUE
+ - status: 100
+[08/10 20:14:23.856440][warning][28800][ObException.cpp:26] A recoverable_exception has occurred!
+ - where: Pipeline.cpp(226)
+ - msg: No any enabled stream profile
+ - type: INVALID_VALUE
+ - status: 100
+[08/10 20:14:23.860445][info][28800][Pipeline.cpp:65] [CL8S16100V3] Pipeline destroyed! @0x2BFE1B98050
+[08/10 20:14:23.860772][info][28800][SensorBase.cpp:47] [CL8S16100V3] SensorBase is destroyed
+[08/10 20:15:55.789721][info][39720][DeviceManager.cpp:25] Current found device(s): (1)
+[08/10 20:15:55.789798][info][39720][DeviceManager.cpp:34] 	- Name: FemtoBolt, PID: 0x066b, SN/ID: CL8S16100V3, Connection: USB3.1
+[08/10 20:15:55.789811][info][39720][DeviceManager.cpp:405] Enable net device enumeration: true
+[08/10 20:15:56.832257][info][39720][DeviceManager.cpp:25] Current device(s) list: (1)
+[08/10 20:15:56.832319][info][39720][DeviceManager.cpp:34] 	- Name: FemtoBolt, PID: 0x066b, SN/ID: CL8S16100V3, Connection: USB3.1
+[08/10 20:15:57.247947][info][39720][DeviceManager.cpp:199] Device created successfully! Name: Femto Bolt, PID: 0x066b, SN/ID: CL8S16100V3 FW: 1.1.3
+[08/10 20:15:57.248000][info][39720][Pipeline.cpp:54] [CL8S16100V3] Pipeline created with device: {name: Femto Bolt, sn: CL8S16100V3}, @0x1EE5D770BA0
+[08/10 20:15:57.324433][info][39720][RawPhaseStreamer.cpp:482] Succeed to load depth engine plugin
+[08/10 20:15:57.555143][info][39244][RawPhaseStreamer.cpp:512] initNvramData: metadataHeader.size: 488056, metadataHeader.width: 0, metadataHeader.height: 0
+[08/10 20:16:00.150673][warning][39720][ObException.cpp:26] A recoverable_exception has occurred!
+ - where: Pipeline.cpp(226)
+ - msg: No any enabled stream profile
+ - type: INVALID_VALUE
+ - status: 100
+[08/10 20:16:00.154252][info][39720][Pipeline.cpp:65] [CL8S16100V3] Pipeline destroyed! @0x1EE5D770BA0
+[08/10 20:16:00.154377][info][39720][SensorBase.cpp:47] [CL8S16100V3] SensorBase is destroyed
+[08/10 20:16:00.163021][info][39720][SensorBase.cpp:47] [CL8S16100V3] SensorBase is destroyed
+[08/10 20:17:43.678787][info][35252][DeviceManager.cpp:25] Current found device(s): (1)
+[08/10 20:17:43.678847][info][35252][DeviceManager.cpp:34] 	- Name: FemtoBolt, PID: 0x066b, SN/ID: CL8S16100V3, Connection: USB3.1
+[08/10 20:17:43.678860][info][35252][DeviceManager.cpp:405] Enable net device enumeration: true
+[08/10 20:17:44.712385][info][35252][DeviceManager.cpp:25] Current device(s) list: (1)
+[08/10 20:17:44.712450][info][35252][DeviceManager.cpp:34] 	- Name: FemtoBolt, PID: 0x066b, SN/ID: CL8S16100V3, Connection: USB3.1
+[08/10 20:17:45.133989][info][35252][DeviceManager.cpp:199] Device created successfully! Name: Femto Bolt, PID: 0x066b, SN/ID: CL8S16100V3 FW: 1.1.3
+[08/10 20:17:45.134036][info][35252][Pipeline.cpp:54] [CL8S16100V3] Pipeline created with device: {name: Femto Bolt, sn: CL8S16100V3}, @0x1DC10A5F350
+[08/10 20:17:45.161708][info][35252][RawPhaseStreamer.cpp:482] Succeed to load depth engine plugin
+[08/10 20:17:45.720224][info][47200][RawPhaseStreamer.cpp:512] initNvramData: metadataHeader.size: 488056, metadataHeader.width: 0, metadataHeader.height: 0
+[08/10 20:17:46.377068][info][35252][Pipeline.cpp:228] [CL8S16100V3] Check and set config done!
+[08/10 20:17:46.386108][info][35252][Pipeline.cpp:266] [CL8S16100V3] Try to start streams!
+[08/10 20:17:46.386187][info][35252][VideoSensor.cpp:58] [CL8S16100V3] Try to start stream: {type: Color, format: RGB, width: 1280, height: 960, fps: 30}
+[08/10 20:17:46.386207][info][35252][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STOPPED to STARTING@Color
+[08/10 20:17:46.386227][info][35252][VideoSensor.cpp:127] [CL8S16100V3] Start backend stream: {type: Color, format: BGR, width: 1280, height: 960, fps: 30}
+[08/10 20:17:46.707438][info][35252][VideoSensor.cpp:58] [CL8S16100V3] Try to start stream: {type: Depth, format: Y16, width: 640, height: 576, fps: 30}
+[08/10 20:17:46.707453][info][35252][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STOPPED to STARTING@Depth
+[08/10 20:17:46.707458][info][35252][VideoSensor.cpp:127] [CL8S16100V3] Start backend stream: {type: Depth, format: Y16, width: 640, height: 576, fps: 30}
+[08/10 20:17:46.905305][info][35252][Pipeline.cpp:293] [CL8S16100V3] Start streams done!
+[08/10 20:17:46.905327][info][35252][Pipeline.cpp:250] [CL8S16100V3] Pipeline start done!
+[08/10 20:17:47.215747][info][47200][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STARTING to STREAMING@Color
+[08/10 20:17:47.222647][warning][35252][Pipeline.cpp:335] [CL8S16100V3] Wait for frame timeout, you can try to increase the wait time! current timeout=300
+[08/10 20:17:47.339544][info][37456][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STARTING to STREAMING@Depth
+[08/10 20:17:51.922085][info][35252][Pipeline.cpp:367] [CL8S16100V3] Try to stop pipeline!
+[08/10 20:17:51.922121][info][35252][Pipeline.cpp:343] [CL8S16100V3] Try to stop streams!
+[08/10 20:17:51.922134][info][35252][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STREAMING to STOPPING@Depth
+[08/10 20:17:52.255678][info][66212][VideoSensor.cpp:153] [CL8S16100V3] Color backend frame callback, frameRate=30.357143fps
+[08/10 20:17:52.257961][info][66360][SensorBase.cpp:379] [CL8S16100V3] Color Streaming... frameRate=30.363167fps
+[08/10 20:17:52.788367][warning][66360][Pipeline.cpp:324] [CL8S16100V3] Output frameset queue is full, drop oldest frameset!
+[08/10 20:17:52.919522][info][35252][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STOPPING to STOPPED@Depth
+[08/10 20:17:52.922639][info][35252][Pipeline.cpp:357] [CL8S16100V3] Sensor stream stopped, sensorType=Depth
+[08/10 20:17:52.922659][info][35252][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STREAMING to STOPPING@Color
+[08/10 20:17:53.612515][info][35252][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STOPPING to STOPPED@Color
+[08/10 20:17:53.613652][info][35252][Pipeline.cpp:357] [CL8S16100V3] Sensor stream stopped, sensorType=Color
+[08/10 20:17:53.613664][info][35252][Pipeline.cpp:363] [CL8S16100V3] Stop streams done!
+[08/10 20:17:53.613726][info][35252][Pipeline.cpp:392] [CL8S16100V3] Stop pipeline done!
+[08/10 20:17:53.681038][info][35252][Pipeline.cpp:65] [CL8S16100V3] Pipeline destroyed! @0x1DC10A5F350
+[08/10 20:17:53.681171][info][35252][SensorBase.cpp:47] [CL8S16100V3] SensorBase is destroyed
+[08/10 20:17:53.681197][info][35252][SensorBase.cpp:47] [CL8S16100V3] SensorBase is destroyed
+[08/10 20:17:53.880374][warning][13044][Pipeline.cpp:324] [CL8S16100V3] Output frameset queue is full, drop oldest frameset! [**3 logs in 1091ms, last: 20:17:52.884434**]
+[08/10 20:24:33.582393][info][63304][DeviceManager.cpp:25] Current found device(s): (1)
+[08/10 20:24:33.582450][info][63304][DeviceManager.cpp:34] 	- Name: FemtoBolt, PID: 0x066b, SN/ID: CL8S16100V3, Connection: USB3.1
+[08/10 20:24:33.582478][info][63304][DeviceManager.cpp:405] Enable net device enumeration: true
+[08/10 20:24:34.637302][info][63304][DeviceManager.cpp:25] Current device(s) list: (1)
+[08/10 20:24:34.637370][info][63304][DeviceManager.cpp:34] 	- Name: FemtoBolt, PID: 0x066b, SN/ID: CL8S16100V3, Connection: USB3.1
+[08/10 20:24:34.999429][info][63304][DeviceManager.cpp:199] Device created successfully! Name: Femto Bolt, PID: 0x066b, SN/ID: CL8S16100V3 FW: 1.1.3
+[08/10 20:24:34.999475][info][63304][Pipeline.cpp:54] [CL8S16100V3] Pipeline created with device: {name: Femto Bolt, sn: CL8S16100V3}, @0x1BCF45BB5C0
+[08/10 20:24:35.027337][info][63304][RawPhaseStreamer.cpp:482] Succeed to load depth engine plugin
+[08/10 20:24:35.591733][info][67864][RawPhaseStreamer.cpp:512] initNvramData: metadataHeader.size: 488056, metadataHeader.width: 0, metadataHeader.height: 0
+[08/10 20:24:38.138228][info][63304][Pipeline.cpp:228] [CL8S16100V3] Check and set config done!
+[08/10 20:24:38.138267][info][63304][Pipeline.cpp:266] [CL8S16100V3] Try to start streams!
+[08/10 20:24:38.138284][info][63304][VideoSensor.cpp:58] [CL8S16100V3] Try to start stream: {type: Color, format: RGB, width: 1280, height: 960, fps: 30}
+[08/10 20:24:38.138293][info][63304][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STOPPED to STARTING@Color
+[08/10 20:24:38.138303][info][63304][VideoSensor.cpp:127] [CL8S16100V3] Start backend stream: {type: Color, format: BGR, width: 1280, height: 960, fps: 30}
+[08/10 20:24:38.324960][info][63304][VideoSensor.cpp:58] [CL8S16100V3] Try to start stream: {type: Depth, format: Y16, width: 640, height: 576, fps: 30}
+[08/10 20:24:38.324988][info][63304][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STOPPED to STARTING@Depth
+[08/10 20:24:38.324992][info][63304][VideoSensor.cpp:127] [CL8S16100V3] Start backend stream: {type: Depth, format: Y16, width: 640, height: 576, fps: 30}
+[08/10 20:24:38.425492][info][19756][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STARTING to STREAMING@Color
+[08/10 20:24:38.568400][info][63304][Pipeline.cpp:293] [CL8S16100V3] Start streams done!
+[08/10 20:24:38.568408][info][63304][Pipeline.cpp:250] [CL8S16100V3] Pipeline start done!
+[08/10 20:24:38.861396][info][20112][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STARTING to STREAMING@Depth
+[08/10 20:24:38.862449][warning][45572][Pipeline.cpp:324] [CL8S16100V3] Output frameset queue is full, drop oldest frameset!
+[08/10 20:24:41.865408][warning][33872][Pipeline.cpp:324] [CL8S16100V3] Output frameset queue is full, drop oldest frameset! [**1 logs in 3002ms, last: 20:24:38.862506**]
+[08/10 20:24:43.440598][info][67864][VideoSensor.cpp:153] [CL8S16100V3] Color backend frame callback, frameRate=30.309074fps
+[08/10 20:24:43.441901][info][19444][SensorBase.cpp:379] [CL8S16100V3] Color Streaming... frameRate=30.333265fps
+[08/10 20:24:43.576492][info][63304][Pipeline.cpp:367] [CL8S16100V3] Try to stop pipeline!
+[08/10 20:24:43.576501][info][63304][Pipeline.cpp:343] [CL8S16100V3] Try to stop streams!
+[08/10 20:24:43.576516][info][63304][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STREAMING to STOPPING@Depth
+[08/10 20:24:44.492570][info][63304][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STOPPING to STOPPED@Depth
+[08/10 20:24:44.493294][info][63304][Pipeline.cpp:357] [CL8S16100V3] Sensor stream stopped, sensorType=Depth
+[08/10 20:24:44.493311][info][63304][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STREAMING to STOPPING@Color
+[08/10 20:24:45.169487][info][63304][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STOPPING to STOPPED@Color
+[08/10 20:24:45.171350][info][63304][Pipeline.cpp:357] [CL8S16100V3] Sensor stream stopped, sensorType=Color
+[08/10 20:24:45.171357][info][63304][Pipeline.cpp:363] [CL8S16100V3] Stop streams done!
+[08/10 20:24:45.171408][info][63304][Pipeline.cpp:392] [CL8S16100V3] Stop pipeline done!
+[08/10 20:24:45.240609][info][63304][Pipeline.cpp:65] [CL8S16100V3] Pipeline destroyed! @0x1BCF45BB5C0
+[08/10 20:24:45.240733][info][63304][SensorBase.cpp:47] [CL8S16100V3] SensorBase is destroyed
+[08/10 20:24:45.240760][info][63304][SensorBase.cpp:47] [CL8S16100V3] SensorBase is destroyed
+[08/10 20:24:45.852814][warning][58032][Pipeline.cpp:324] [CL8S16100V3] Output frameset queue is full, drop oldest frameset! [**2 logs in 3987ms, last: 20:24:44.477377**]
+[08/10 20:27:08.606038][info][53688][DeviceManager.cpp:25] Current found device(s): (1)
+[08/10 20:27:08.606137][info][53688][DeviceManager.cpp:34] 	- Name: FemtoBolt, PID: 0x066b, SN/ID: CL8S16100V3, Connection: USB3.1
+[08/10 20:27:08.606157][info][53688][DeviceManager.cpp:405] Enable net device enumeration: true
+[08/10 20:27:09.640375][info][53688][DeviceManager.cpp:25] Current device(s) list: (1)
+[08/10 20:27:09.640450][info][53688][DeviceManager.cpp:34] 	- Name: FemtoBolt, PID: 0x066b, SN/ID: CL8S16100V3, Connection: USB3.1
+[08/10 20:27:10.198202][info][53688][DeviceManager.cpp:199] Device created successfully! Name: Femto Bolt, PID: 0x066b, SN/ID: CL8S16100V3 FW: 1.1.3
+[08/10 20:27:10.198329][info][53688][Pipeline.cpp:54] [CL8S16100V3] Pipeline created with device: {name: Femto Bolt, sn: CL8S16100V3}, @0x1E1FC12E3D0
+[08/10 20:27:10.247521][info][53688][RawPhaseStreamer.cpp:482] Succeed to load depth engine plugin
+[08/10 20:27:10.516179][info][65696][RawPhaseStreamer.cpp:512] initNvramData: metadataHeader.size: 488056, metadataHeader.width: 0, metadataHeader.height: 0
+[08/10 20:27:13.202917][info][53688][Pipeline.cpp:228] [CL8S16100V3] Check and set config done!
+[08/10 20:27:13.203024][info][53688][Pipeline.cpp:266] [CL8S16100V3] Try to start streams!
+[08/10 20:27:13.203056][info][53688][VideoSensor.cpp:58] [CL8S16100V3] Try to start stream: {type: Color, format: RGB, width: 1280, height: 960, fps: 30}
+[08/10 20:27:13.203076][info][53688][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STOPPED to STARTING@Color
+[08/10 20:27:13.203098][info][53688][VideoSensor.cpp:127] [CL8S16100V3] Start backend stream: {type: Color, format: BGR, width: 1280, height: 960, fps: 30}
+[08/10 20:27:13.546248][info][53688][VideoSensor.cpp:58] [CL8S16100V3] Try to start stream: {type: Depth, format: Y16, width: 640, height: 576, fps: 30}
+[08/10 20:27:13.546329][info][53688][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STOPPED to STARTING@Depth
+[08/10 20:27:13.546344][info][53688][VideoSensor.cpp:127] [CL8S16100V3] Start backend stream: {type: Depth, format: Y16, width: 640, height: 576, fps: 30}
+[08/10 20:27:14.034576][info][53688][Pipeline.cpp:293] [CL8S16100V3] Start streams done!
+[08/10 20:27:14.034669][info][53688][Pipeline.cpp:250] [CL8S16100V3] Pipeline start done!
+[08/10 20:27:14.311267][info][29036][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STARTING to STREAMING@Color
+[08/10 20:27:14.336643][warning][53688][Pipeline.cpp:335] [CL8S16100V3] Wait for frame timeout, you can try to increase the wait time! current timeout=300
+[08/10 20:27:14.340999][info][23164][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STARTING to STREAMING@Depth
+[08/10 20:27:19.051049][info][53688][Pipeline.cpp:367] [CL8S16100V3] Try to stop pipeline!
+[08/10 20:27:19.051117][info][53688][Pipeline.cpp:343] [CL8S16100V3] Try to stop streams!
+[08/10 20:27:19.051139][info][53688][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STREAMING to STOPPING@Depth
+[08/10 20:27:19.342988][info][50420][VideoSensor.cpp:153] [CL8S16100V3] Color backend frame callback, frameRate=30.604134fps
+[08/10 20:27:19.345874][info][8152][SensorBase.cpp:379] [CL8S16100V3] Color Streaming... frameRate=30.677292fps
+[08/10 20:27:19.913485][warning][8152][Pipeline.cpp:324] [CL8S16100V3] Output frameset queue is full, drop oldest frameset!
+[08/10 20:27:19.946294][info][53688][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STOPPING to STOPPED@Depth
+[08/10 20:27:19.946972][info][53688][Pipeline.cpp:357] [CL8S16100V3] Sensor stream stopped, sensorType=Depth
+[08/10 20:27:19.946996][info][53688][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STREAMING to STOPPING@Color
+[08/10 20:27:20.607246][info][53688][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STOPPING to STOPPED@Color
+[08/10 20:27:20.608640][info][53688][Pipeline.cpp:357] [CL8S16100V3] Sensor stream stopped, sensorType=Color
+[08/10 20:27:20.608651][info][53688][Pipeline.cpp:363] [CL8S16100V3] Stop streams done!
+[08/10 20:27:20.608726][info][53688][Pipeline.cpp:392] [CL8S16100V3] Stop pipeline done!
+[08/10 20:27:20.743682][info][53688][Pipeline.cpp:65] [CL8S16100V3] Pipeline destroyed! @0x1E1FC12E3D0
+[08/10 20:27:20.743872][info][53688][SensorBase.cpp:47] [CL8S16100V3] SensorBase is destroyed
+[08/10 20:27:20.743919][info][53688][SensorBase.cpp:47] [CL8S16100V3] SensorBase is destroyed
+[08/11 13:22:19.283545][info][5960][DeviceManager.cpp:25] Current found device(s): (1)
+[08/11 13:22:19.283571][info][5960][DeviceManager.cpp:34] 	- Name: FemtoBolt, PID: 0x066b, SN/ID: CL8S16100V3, Connection: USB3.1
+[08/11 13:22:19.283578][info][5960][DeviceManager.cpp:405] Enable net device enumeration: true
+[08/11 13:22:20.319784][info][5960][DeviceManager.cpp:25] Current device(s) list: (1)
+[08/11 13:22:20.319851][info][5960][DeviceManager.cpp:34] 	- Name: FemtoBolt, PID: 0x066b, SN/ID: CL8S16100V3, Connection: USB3.1
+[08/11 13:22:20.578603][info][5960][DeviceManager.cpp:199] Device created successfully! Name: Femto Bolt, PID: 0x066b, SN/ID: CL8S16100V3 FW: 1.1.3
+[08/11 13:22:20.579785][info][5960][Pipeline.cpp:54] [CL8S16100V3] Pipeline created with device: {name: Femto Bolt, sn: CL8S16100V3}, @0x29DA79CA7E0
+[08/11 13:22:21.112534][info][5960][RawPhaseStreamer.cpp:482] Succeed to load depth engine plugin
+[08/11 13:22:21.337158][info][33564][RawPhaseStreamer.cpp:512] initNvramData: metadataHeader.size: 488056, metadataHeader.width: 0, metadataHeader.height: 0
+[08/11 13:22:21.991754][info][5960][Pipeline.cpp:228] [CL8S16100V3] Check and set config done!
+[08/11 13:22:21.992341][info][5960][Pipeline.cpp:266] [CL8S16100V3] Try to start streams!
+[08/11 13:22:21.992363][info][5960][VideoSensor.cpp:58] [CL8S16100V3] Try to start stream: {type: Color, format: RGB, width: 1280, height: 960, fps: 30}
+[08/11 13:22:21.992711][info][5960][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STOPPED to STARTING@Color
+[08/11 13:22:21.992940][info][5960][VideoSensor.cpp:127] [CL8S16100V3] Start backend stream: {type: Color, format: BGR, width: 1280, height: 960, fps: 30}
+[08/11 13:22:22.220246][error][5960][WinHelpers.cpp:83] streamReader_->ReadSample(...) returned: HResult 0xc00d3704: "Hardware MFT failed to start streaming due to lack of hardware resources."
+[08/11 13:22:22.221476][warning][5960][ObException.cpp:32] A unrecoverable_exception has occurred!
+ - where: WinHelpers.cpp(84)
+ - msg: streamReader_->ReadSample(...) returned: HResult 0xc00d3704: "Hardware MFT failed to start streaming due to lack of hardware resources."
+ - type: PLATFORM
+ - status: 1
+[08/11 13:22:22.222767][warning][5960][WmfUvcDevicePort.cpp:941] Execute failure! A libobsensor_exception has occurred!
+ - where: WmfUvcDevicePort.cpp(941):libobsensor::WmfUvcDevicePort::startStream
+ - msg: streamReader_->ReadSample(...) returned: HResult 0xc00d3704: "Hardware MFT failed to start streaming due to lack of hardware resources."
+ - type: class libobsensor::unrecoverable_exception
+ - status: 1
+[08/11 13:22:22.222811][warning][5960][WmfUvcDevicePort.cpp:941] Retry to start stream!
+[08/11 13:22:22.231063][error][5960][WinHelpers.cpp:83] streamReader_->Flush(index) returned: HResult 0xc00d3704: "Hardware MFT failed to start streaming due to lack of hardware resources."
+[08/11 13:22:22.232765][warning][5960][ObException.cpp:32] A unrecoverable_exception has occurred!
+ - where: WinHelpers.cpp(84)
+ - msg: streamReader_->Flush(index) returned: HResult 0xc00d3704: "Hardware MFT failed to start streaming due to lack of hardware resources."
+ - type: PLATFORM
+ - status: 1
+[08/11 13:22:22.232835][warning][5960][WmfUvcDevicePort.cpp:941] Execute failure! A libobsensor_exception has occurred!
+ - where: WmfUvcDevicePort.cpp(941):libobsensor::WmfUvcDevicePort::startStream
+ - msg: streamReader_->Flush(index) returned: HResult 0xc00d3704: "Hardware MFT failed to start streaming due to lack of hardware resources."
+ - type: class libobsensor::unrecoverable_exception
+ - status: 1
+[08/11 13:22:22.333137][error][5960][WinHelpers.cpp:83] streamReader_->ReadSample(...) returned: HResult 0xc00d3704: "Hardware MFT failed to start streaming due to lack of hardware resources."
+[08/11 13:22:22.333526][warning][5960][ObException.cpp:32] A unrecoverable_exception has occurred!
+ - where: WinHelpers.cpp(84)
+ - msg: streamReader_->ReadSample(...) returned: HResult 0xc00d3704: "Hardware MFT failed to start streaming due to lack of hardware resources."
+ - type: PLATFORM
+ - status: 1
+[08/11 13:22:22.334160][warning][5960][VideoSensor.cpp:145] [CL8S16100V3] Execute failure! A libobsensor_exception has occurred!
+ - where: VideoSensor.cpp(145):libobsensor::VideoSensor::start
+ - msg: streamReader_->ReadSample(...) returned: HResult 0xc00d3704: "Hardware MFT failed to start streaming due to lack of hardware resources."
+ - type: class libobsensor::unrecoverable_exception
+ - status: 1
+[08/11 13:22:22.334201][info][5960][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STARTING to START_FAILED@Color
+[08/11 13:22:22.334239][warning][5960][Pipeline.cpp:248] [CL8S16100V3] Execute failure! A libobsensor_exception has occurred!
+ - where: Pipeline.cpp(248):libobsensor::Pipeline::start
+ - msg: streamReader_->ReadSample(...) returned: HResult 0xc00d3704: "Hardware MFT failed to start streaming due to lack of hardware resources."
+ - type: class libobsensor::unrecoverable_exception
+ - status: 1
+[08/11 13:22:22.334250][info][5960][Pipeline.cpp:367] [CL8S16100V3] Try to stop pipeline!
+[08/11 13:22:22.334253][info][5960][Pipeline.cpp:343] [CL8S16100V3] Try to stop streams!
+[08/11 13:22:22.334264][info][5960][Pipeline.cpp:357] [CL8S16100V3] Sensor stream stopped, sensorType=Depth
+[08/11 13:22:22.334265][info][5960][Pipeline.cpp:357] [CL8S16100V3] Sensor stream stopped, sensorType=Color
+[08/11 13:22:22.334266][info][5960][Pipeline.cpp:363] [CL8S16100V3] Stop streams done!
+[08/11 13:22:22.334274][info][5960][Pipeline.cpp:392] [CL8S16100V3] Stop pipeline done!
+[08/11 13:22:22.345049][info][5960][Pipeline.cpp:65] [CL8S16100V3] Pipeline destroyed! @0x29DA79CA7E0
+[08/11 13:22:22.346057][info][5960][SensorBase.cpp:47] [CL8S16100V3] SensorBase is destroyed
+[08/11 13:22:22.353545][error][5960][WinHelpers.cpp:83] streamReader_->Flush(index) returned: HResult 0xc00d3704: "Hardware MFT failed to start streaming due to lack of hardware resources."
+[08/11 13:22:22.353839][warning][5960][ObException.cpp:32] A unrecoverable_exception has occurred!
+ - where: WinHelpers.cpp(84)
+ - msg: streamReader_->Flush(index) returned: HResult 0xc00d3704: "Hardware MFT failed to start streaming due to lack of hardware resources."
+ - type: PLATFORM
+ - status: 1
+[08/11 13:22:22.353882][warning][5960][WmfUvcDevicePort.cpp:655] Execute failure! A libobsensor_exception has occurred!
+ - where: WmfUvcDevicePort.cpp(655):libobsensor::WmfUvcDevicePort::~WmfUvcDevicePort
+ - msg: streamReader_->Flush(index) returned: HResult 0xc00d3704: "Hardware MFT failed to start streaming due to lack of hardware resources."
+ - type: class libobsensor::unrecoverable_exception
+ - status: 1
+[08/11 13:22:22.356991][info][5960][SensorBase.cpp:47] [CL8S16100V3] SensorBase is destroyed
+[08/11 13:24:45.304756][info][25436][DeviceManager.cpp:25] Current found device(s): (1)
+[08/11 13:24:45.304812][info][25436][DeviceManager.cpp:34] 	- Name: FemtoBolt, PID: 0x066b, SN/ID: CL8S16100V3, Connection: USB3.1
+[08/11 13:24:45.304842][info][25436][DeviceManager.cpp:405] Enable net device enumeration: true
+[08/11 13:24:46.358221][info][25436][DeviceManager.cpp:25] Current device(s) list: (1)
+[08/11 13:24:46.358271][info][25436][DeviceManager.cpp:34] 	- Name: FemtoBolt, PID: 0x066b, SN/ID: CL8S16100V3, Connection: USB3.1
+[08/11 13:24:46.884702][info][25436][DeviceManager.cpp:199] Device created successfully! Name: Femto Bolt, PID: 0x066b, SN/ID: CL8S16100V3 FW: 1.1.3
+[08/11 13:24:46.884815][info][25436][Pipeline.cpp:54] [CL8S16100V3] Pipeline created with device: {name: Femto Bolt, sn: CL8S16100V3}, @0x208B92D6D90
+[08/11 13:24:46.961681][info][25436][RawPhaseStreamer.cpp:482] Succeed to load depth engine plugin
+[08/11 13:24:47.200432][info][19308][RawPhaseStreamer.cpp:512] initNvramData: metadataHeader.size: 488056, metadataHeader.width: 0, metadataHeader.height: 0
+[08/11 13:24:49.908267][info][25436][Pipeline.cpp:228] [CL8S16100V3] Check and set config done!
+[08/11 13:24:49.908318][info][25436][Pipeline.cpp:266] [CL8S16100V3] Try to start streams!
+[08/11 13:24:49.908330][info][25436][VideoSensor.cpp:58] [CL8S16100V3] Try to start stream: {type: Color, format: RGB, width: 1280, height: 960, fps: 30}
+[08/11 13:24:49.908341][info][25436][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STOPPED to STARTING@Color
+[08/11 13:24:49.908353][info][25436][VideoSensor.cpp:127] [CL8S16100V3] Start backend stream: {type: Color, format: BGR, width: 1280, height: 960, fps: 30}
+[08/11 13:24:50.227570][info][25436][VideoSensor.cpp:58] [CL8S16100V3] Try to start stream: {type: Depth, format: Y16, width: 640, height: 576, fps: 30}
+[08/11 13:24:50.227605][info][25436][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STOPPED to STARTING@Depth
+[08/11 13:24:50.227612][info][25436][VideoSensor.cpp:127] [CL8S16100V3] Start backend stream: {type: Depth, format: Y16, width: 640, height: 576, fps: 30}
+[08/11 13:24:50.742600][info][25436][Pipeline.cpp:293] [CL8S16100V3] Start streams done!
+[08/11 13:24:50.742666][info][25436][Pipeline.cpp:250] [CL8S16100V3] Pipeline start done!
+[08/11 13:24:50.812950][info][25436][Pipeline.cpp:367] [CL8S16100V3] Try to stop pipeline!
+[08/11 13:24:50.812964][info][25436][Pipeline.cpp:343] [CL8S16100V3] Try to stop streams!
+[08/11 13:24:50.813035][info][25436][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STARTING to STOPPING@Depth
+[08/11 13:24:51.015121][info][53220][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STARTING to STREAMING@Color
+[08/11 13:24:51.823181][warning][60588][Pipeline.cpp:324] [CL8S16100V3] Output frameset queue is full, drop oldest frameset!
+[08/11 13:24:52.005038][info][25436][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STOPPING to STOPPED@Depth
+[08/11 13:24:52.005122][info][25436][Pipeline.cpp:357] [CL8S16100V3] Sensor stream stopped, sensorType=Depth
+[08/11 13:24:52.005144][info][25436][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STREAMING to STOPPING@Color
+[08/11 13:24:52.649606][info][25436][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STOPPING to STOPPED@Color
+[08/11 13:24:52.650528][info][25436][Pipeline.cpp:357] [CL8S16100V3] Sensor stream stopped, sensorType=Color
+[08/11 13:24:52.650536][info][25436][Pipeline.cpp:363] [CL8S16100V3] Stop streams done!
+[08/11 13:24:52.650576][info][25436][Pipeline.cpp:392] [CL8S16100V3] Stop pipeline done!
+[08/11 13:24:52.650604][info][25436][Pipeline.cpp:65] [CL8S16100V3] Pipeline destroyed! @0x208B92D6D90
+[08/11 13:24:52.650799][info][25436][SensorBase.cpp:47] [CL8S16100V3] SensorBase is destroyed
+[08/11 13:24:52.650846][info][25436][SensorBase.cpp:47] [CL8S16100V3] SensorBase is destroyed
+[08/11 13:24:53.527257][warning][47120][Pipeline.cpp:324] [CL8S16100V3] Output frameset queue is full, drop oldest frameset! [**5 logs in 1704ms, last: 13:24:51.988217**]
+[08/11 15:00:50.331992][info][13472][DeviceManager.cpp:25] Current found device(s): (1)
+[08/11 15:00:50.332094][info][13472][DeviceManager.cpp:34] 	- Name: FemtoBolt, PID: 0x066b, SN/ID: CL8S16100V3, Connection: USB3.1
+[08/11 15:00:50.332107][info][13472][DeviceManager.cpp:405] Enable net device enumeration: true
+[08/11 15:00:51.375128][info][13472][DeviceManager.cpp:25] Current device(s) list: (1)
+[08/11 15:00:51.375193][info][13472][DeviceManager.cpp:34] 	- Name: FemtoBolt, PID: 0x066b, SN/ID: CL8S16100V3, Connection: USB3.1
+[08/11 15:00:51.827669][info][13472][DeviceManager.cpp:199] Device created successfully! Name: Femto Bolt, PID: 0x066b, SN/ID: CL8S16100V3 FW: 1.1.3
+[08/11 15:00:51.827727][info][13472][Pipeline.cpp:54] [CL8S16100V3] Pipeline created with device: {name: Femto Bolt, sn: CL8S16100V3}, @0x27F3B1D0C70
+[08/11 15:00:51.869926][info][13472][RawPhaseStreamer.cpp:482] Succeed to load depth engine plugin
+[08/11 15:00:52.094538][info][20832][RawPhaseStreamer.cpp:512] initNvramData: metadataHeader.size: 488056, metadataHeader.width: 0, metadataHeader.height: 0
+[08/11 15:00:54.766398][info][13472][Pipeline.cpp:228] [CL8S16100V3] Check and set config done!
+[08/11 15:00:54.766464][info][13472][Pipeline.cpp:266] [CL8S16100V3] Try to start streams!
+[08/11 15:00:54.766481][info][13472][VideoSensor.cpp:58] [CL8S16100V3] Try to start stream: {type: Color, format: RGB, width: 1280, height: 960, fps: 30}
+[08/11 15:00:54.766495][info][13472][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STOPPED to STARTING@Color
+[08/11 15:00:54.766510][info][13472][VideoSensor.cpp:127] [CL8S16100V3] Start backend stream: {type: Color, format: BGR, width: 1280, height: 960, fps: 30}
+[08/11 15:00:55.010838][info][13472][VideoSensor.cpp:58] [CL8S16100V3] Try to start stream: {type: Depth, format: Y16, width: 640, height: 576, fps: 30}
+[08/11 15:00:55.010865][info][13472][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STOPPED to STARTING@Depth
+[08/11 15:00:55.010872][info][13472][VideoSensor.cpp:127] [CL8S16100V3] Start backend stream: {type: Depth, format: Y16, width: 640, height: 576, fps: 30}
+[08/11 15:00:55.520946][info][13472][Pipeline.cpp:293] [CL8S16100V3] Start streams done!
+[08/11 15:00:55.521010][info][13472][Pipeline.cpp:250] [CL8S16100V3] Pipeline start done!
+[08/11 15:00:55.736956][warning][13472][Pipeline.cpp:335] [CL8S16100V3] Wait for frame timeout, you can try to increase the wait time! current timeout=200
+[08/11 15:00:55.784717][info][56124][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STARTING to STREAMING@Color
+[08/11 15:00:55.829947][info][22252][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STARTING to STREAMING@Depth
+[08/11 15:01:00.789951][info][25804][VideoSensor.cpp:153] [CL8S16100V3] Color backend frame callback, frameRate=30.369629fps
+[08/11 15:01:00.825354][info][10912][SensorBase.cpp:379] [CL8S16100V3] Color Streaming... frameRate=30.405405fps
+[08/11 15:01:00.844379][info][22252][VideoSensor.cpp:153] [CL8S16100V3] Depth backend frame callback, frameRate=30.514559fps
+[08/11 15:01:00.844521][info][52788][SensorBase.cpp:379] [CL8S16100V3] Depth Streaming... frameRate=30.520647fps
+[08/11 15:01:05.544203][info][13472][Pipeline.cpp:367] [CL8S16100V3] Try to stop pipeline!
+[08/11 15:01:05.544262][info][13472][Pipeline.cpp:343] [CL8S16100V3] Try to stop streams!
+[08/11 15:01:05.544288][info][13472][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STREAMING to STOPPING@Depth
+[08/11 15:01:05.801981][info][15728][VideoSensor.cpp:153] [CL8S16100V3] Color backend frame callback, frameRate=30.127693fps
+[08/11 15:01:05.841680][info][10912][SensorBase.cpp:379] [CL8S16100V3] Color Streaming... frameRate=30.097666fps
+[08/11 15:01:06.348329][info][13472][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STOPPING to STOPPED@Depth
+[08/11 15:01:06.349293][info][13472][Pipeline.cpp:357] [CL8S16100V3] Sensor stream stopped, sensorType=Depth
+[08/11 15:01:06.352270][info][13472][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STREAMING to STOPPING@Color
+[08/11 15:01:07.036452][info][13472][SensorBase.cpp:210] [CL8S16100V3] Stream state changed from STOPPING to STOPPED@Color
+[08/11 15:01:07.037722][info][13472][Pipeline.cpp:357] [CL8S16100V3] Sensor stream stopped, sensorType=Color
+[08/11 15:01:07.037736][info][13472][Pipeline.cpp:363] [CL8S16100V3] Stop streams done!
+[08/11 15:01:07.037821][info][13472][Pipeline.cpp:392] [CL8S16100V3] Stop pipeline done!
+[08/11 15:01:07.202743][info][13472][Pipeline.cpp:65] [CL8S16100V3] Pipeline destroyed! @0x27F3B1D0C70
+[08/11 15:01:07.202919][info][13472][SensorBase.cpp:47] [CL8S16100V3] SensorBase is destroyed
+[08/11 15:01:07.202955][info][13472][SensorBase.cpp:47] [CL8S16100V3] SensorBase is destroyed

@@ -1,0 +1,316 @@
+# ═══════════════════════════════════════════════════════════════════════════
+# Walker-Gait Data Collection Protocol
+# ═══════════════════════════════════════════════════════════════════════════
+#
+# Duration formula: (14m / expected_speed_ms) + 10s_buffer, rounded up to 5s
+# Minimum 25s (enough frames for reliable metric extraction at any cadence)
+#
+# Metronome BPM = steps/min (each beat = one foot contact)
+# Affected side: pick one (left or right) and keep consistent within a block.
+#                Swap sides between repeat sessions to build balanced data.
+#
+# Trials per condition: 3 (standard clinical protocol)
+# Rest between blocks: 2 minutes minimum
+
+protocol_name: "walker_gait_data_collection_v1"
+n_trials_per_condition: 3
+rest_between_blocks_s: 120     # 2 min rest
+rest_between_trials_s: 15      # short rest between trials in same condition
+
+# ─── Clothing and setup reminders ─────────────────────────────────────────
+pre_session_checklist:
+  - "Wear tight, light-coloured clothing (shorts if possible)"
+  - "Light-coloured socks or bare feet — no dark shoes"
+  - "Confirm camera is mounted securely and lens is clean"
+  - "Confirm USB 3.0 port (not USB 2.0)"
+  - "Tape ArUco markers at 2m and 12m on corridor"
+  - "Run verify_session.py on a 5-second test recording first"
+  - "Do 3 practice walks at comfortable pace before Block 1"
+  - "Set metronome app on phone before starting"
+
+blocks:
+
+  # ─────────────────────────────────────────────────────────────────────────
+  - id: 1
+    name: "healthy_baseline"
+    label: "Block 1 — Healthy Baseline"
+    description: >
+      Ground truth for your pipeline. Walk normally — no mimicry.
+      These sessions validate that your metrics are correct before
+      you introduce any asymmetry. Expected: low asymmetry scores,
+      speed ~1.2–1.4 m/s comfortable, cadence ~100–110 steps/min.
+    affected_side: none
+
+    conditions:
+      - id: "1a"
+        label: "Comfortable pace (no metronome)"
+        condition_slug: "comfortable"
+        metronome_bpm: null
+        expected_speed_ms: 1.2
+        duration_s: 30
+        instructions: >
+          Walk at your natural self-selected pace. No metronome.
+          This is your true baseline — do not try to modify your gait.
+
+      - id: "1b"
+        label: "Brisk pace"
+        condition_slug: "brisk"
+        metronome_bpm: 125
+        expected_speed_ms: 1.5
+        duration_s: 25
+        instructions: >
+          Walk as briskly as is comfortable and safe. Metronome at 125 BPM.
+          Maintain symmetry — this is a speed test, not an asymmetry test.
+
+      - id: "1c"
+        label: "Slow healthy pace"
+        condition_slug: "slow_healthy"
+        metronome_bpm: 85
+        expected_speed_ms: 0.8
+        duration_s: 35
+        instructions: >
+          Walk slowly but with fully symmetric, normal-pattern gait.
+          Metronome at 85 BPM. Keep steps even in length and timing.
+
+  # ─────────────────────────────────────────────────────────────────────────
+  - id: 2
+    name: "speed_reduction"
+    label: "Block 2 — Speed Reduction (Symmetric)"
+    description: >
+      Isolates slow gait from asymmetric gait. Slow post-stroke walking
+      without asymmetry is clinically distinct from healthy slow walking.
+      Keep steps fully symmetric in length and timing.
+      Target range: 0.18–1.03 m/s (published stroke gait range).
+    affected_side: none
+
+    conditions:
+      - id: "2a"
+        label: "Mild slow (upper stroke range)"
+        condition_slug: "slow_mild"
+        metronome_bpm: 72
+        expected_speed_ms: 0.7
+        duration_s: 35
+        instructions: >
+          Walk slowly with symmetric steps. Metronome at 72 BPM.
+          ~0.7 m/s — upper end of post-stroke speed range.
+          Focus on keeping left and right steps identical.
+
+      - id: "2b"
+        label: "Moderate slow (mid stroke range)"
+        condition_slug: "slow_moderate"
+        metronome_bpm: 58
+        expected_speed_ms: 0.5
+        duration_s: 45
+        instructions: >
+          Walk at ~0.5 m/s, symmetric. Metronome at 58 BPM.
+          This cadence requires real concentration — listen carefully
+          and land your foot ON the beat, not after it.
+
+      - id: "2c"
+        label: "Severe slow (lower stroke range)"
+        condition_slug: "slow_severe"
+        metronome_bpm: 44
+        expected_speed_ms: 0.25
+        duration_s: 90
+        instructions: >
+          Walk at ~0.25 m/s, the lower end of published stroke speeds.
+          Metronome at 44 BPM — very slow. Steps are still symmetric.
+          Take small steps; do not rush between beats.
+
+  # ─────────────────────────────────────────────────────────────────────────
+  - id: 3
+    name: "temporal_asymmetry"
+    label: "Block 3 — Temporal Asymmetry"
+    description: >
+      Most clinically valuable asymmetry class per literature.
+      Mimic: the affected foot lingers in stance longer (delayed push-off),
+      creating shorter step TIME on that side. Keep step LENGTHS roughly equal
+      so temporal and spatial asymmetry are decoupled.
+      Do left-affected AND right-affected across sessions.
+    affected_side: "choose_one"  # operator fills in per session
+
+    conditions:
+      - id: "3a"
+        label: "Mild temporal asymmetry"
+        condition_slug: "temporal_asym_mild"
+        metronome_bpm: 80
+        expected_speed_ms: 0.9
+        duration_s: 35
+        asymmetry_target_pct: 15
+        instructions: >
+          Metronome at 80 BPM. Delay push-off of your AFFECTED foot by ~15%
+          of the beat interval. Step LENGTHS should look equal — only
+          the TIMING differs. Think: hesitate before pushing off that foot.
+
+      - id: "3b"
+        label: "Moderate temporal asymmetry"
+        condition_slug: "temporal_asym_moderate"
+        metronome_bpm: 70
+        expected_speed_ms: 0.7
+        duration_s: 40
+        asymmetry_target_pct: 25
+        instructions: >
+          Metronome at 70 BPM. Delay affected foot push-off by ~25%.
+          The affected foot should visibly linger on the floor longer.
+          Keep unaffected foot timing on the beat.
+
+      - id: "3c"
+        label: "Severe temporal asymmetry"
+        condition_slug: "temporal_asym_severe"
+        metronome_bpm: 55
+        expected_speed_ms: 0.5
+        duration_s: 45
+        asymmetry_target_pct: 40
+        instructions: >
+          Metronome at 55 BPM. Exaggerate the affected foot stance time —
+          nearly a full beat of extra ground contact before pushing off.
+          This mimics severe hemiparetic prolonged double-support.
+
+  # ─────────────────────────────────────────────────────────────────────────
+  - id: 4
+    name: "spatial_asymmetry"
+    label: "Block 4 — Spatial Asymmetry"
+    description: >
+      Reduced step length on the hemiparetic side from reduced push-off power.
+      Keep timing roughly symmetric here — decouple from Block 3.
+      Wider base of support and slight toe-out on affected side are realistic.
+    affected_side: "choose_one"
+
+    conditions:
+      - id: "4a"
+        label: "Mild step length asymmetry"
+        condition_slug: "spatial_asym_mild"
+        metronome_bpm: 80
+        expected_speed_ms: 0.9
+        duration_s: 35
+        asymmetry_target_pct: 15
+        instructions: >
+          Metronome at 80 BPM. Take a noticeably shorter step with the
+          AFFECTED foot — ~15% shorter than the unaffected side.
+          Keep timing even between feet. Widen stance slightly.
+
+      - id: "4b"
+        label: "Moderate step length asymmetry"
+        condition_slug: "spatial_asym_moderate"
+        metronome_bpm: 70
+        expected_speed_ms: 0.7
+        duration_s: 40
+        asymmetry_target_pct: 25
+        instructions: >
+          Metronome at 70 BPM. Affected step clearly shorter (~25%).
+          Slight toe-out on affected side is realistic — allow it.
+
+      - id: "4c"
+        label: "Combined temporal + spatial (realistic stroke)"
+        condition_slug: "combined_asym"
+        metronome_bpm: 60
+        expected_speed_ms: 0.5
+        duration_s: 45
+        asymmetry_target_pct: 30
+        instructions: >
+          Metronome at 60 BPM. Both shorter step AND delayed push-off
+          on the affected side simultaneously. This is the most ecologically
+          valid condition — real post-stroke gait has both.
+          Speed will drop further as a result; that is expected.
+
+  # ─────────────────────────────────────────────────────────────────────────
+  - id: 5
+    name: "compensatory_patterns"
+    label: "Block 5 — Compensatory Gait Patterns"
+    description: >
+      Stress-tests specific pipeline components. Foot drop tests the
+      heel-strike event detector. Circumduction tests backprojection with
+      lateral foot motion. Shuffling tests event detection at minimal
+      foot-floor clearance amplitude.
+    affected_side: "choose_one"
+
+    conditions:
+      - id: "5a"
+        label: "Foot drop"
+        condition_slug: "foot_drop"
+        metronome_bpm: 55
+        expected_speed_ms: 0.45
+        duration_s: 45
+        instructions: >
+          Metronome at 55 BPM. Keep the AFFECTED ankle stiff through swing —
+          do not dorsiflex. Let the toes contact first rather than the heel.
+          This removes the normal heel-strike vertical trajectory minimum.
+          Take your time — this is hard to mimic and needs concentration.
+          SAFETY: only attempt if you can do so without tripping.
+
+      - id: "5b"
+        label: "Circumduction"
+        condition_slug: "circumduction"
+        metronome_bpm: 55
+        expected_speed_ms: 0.45
+        duration_s: 45
+        instructions: >
+          Metronome at 55 BPM. Swing the AFFECTED leg outward in a wide
+          lateral arc to clear the foot (as if the knee won't bend enough).
+          This changes the foot's horizontal trajectory and tests the
+          3D backprojection when X-displacement is large.
+
+      - id: "5c"
+        label: "Shuffling (minimal clearance)"
+        condition_slug: "shuffling"
+        metronome_bpm: 46
+        expected_speed_ms: 0.3
+        duration_s: 60
+        instructions: >
+          Metronome at 46 BPM. Very small steps, feet barely clearing the
+          floor (near-dragging). No heel strike — flat foot contact.
+          This is the hardest test for the event detector: the foot-floor
+          distance signal will be very small amplitude throughout.
+
+  # ─────────────────────────────────────────────────────────────────────────
+  - id: 6
+    name: "10mwt_validation"
+    label: "Block 6 — 10MWT Ground-Truth Validation"
+    description: >
+      Standardised 10-Meter Walk Test with ArUco marker timing.
+      The computed walking speed (10m / elapsed time from markers) is your
+      ground truth to cross-validate the pipeline's speed estimate
+      (cadence × mean step length). Agreement within 10% = pipeline healthy.
+      Run AFTER all mimicry blocks so fatigue doesn't affect baselines.
+    affected_side: "matches_earlier_blocks"
+
+    conditions:
+      - id: "6a"
+        label: "10MWT — comfortable pace"
+        condition_slug: "10mwt_comfortable"
+        metronome_bpm: null
+        expected_speed_ms: 1.2
+        duration_s: 30
+        instructions: >
+          Walk at comfortable self-selected pace. No metronome.
+          ArUco markers at 2m and 12m will auto-log crossing frames.
+
+      - id: "6b"
+        label: "10MWT — fast pace"
+        condition_slug: "10mwt_fast"
+        metronome_bpm: null
+        expected_speed_ms: 1.5
+        duration_s: 25
+        instructions: >
+          Walk as fast as safely possible. No metronome.
+
+      - id: "6c"
+        label: "10MWT — slow mimicry (severe)"
+        condition_slug: "10mwt_slow_severe"
+        metronome_bpm: 44
+        expected_speed_ms: 0.25
+        duration_s: 90
+        instructions: >
+          Repeat your Block 2 severe slow condition on the timed corridor.
+          Metronome at 44 BPM. Ground-truth speed from markers should
+          match your Block 2 pipeline estimate.
+
+      - id: "6d"
+        label: "10MWT — combined asymmetry"
+        condition_slug: "10mwt_combined_asym"
+        metronome_bpm: 60
+        expected_speed_ms: 0.5
+        duration_s: 60
+        instructions: >
+          Repeat your Block 4 combined asymmetry condition on the timed
+          corridor. Metronome at 60 BPM.

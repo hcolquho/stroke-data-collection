@@ -1,0 +1,13 @@
+# Walker-Gait Recording — Python dependencies
+#
+# Install with:
+#   pip install -r requirements.txt
+#
+# NOTE: opencv-contrib-python is required (not plain opencv-python).
+# If you already have opencv-python installed, uninstall it first:
+#   pip uninstall opencv-python
+#   pip install opencv-contrib-python
+
+pyorbbecsdk2
+opencv-contrib-python
+numpy

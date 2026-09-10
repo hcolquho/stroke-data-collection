@@ -1,0 +1,15 @@
+{
+  "device": "Orbbec Femto Bolt",
+  "intrinsics": {
+    "fx": 1004.1325073242188,
+    "fy": 1003.7389526367188,
+    "cx": 640.0615844726562,
+    "cy": 487.5906982421875
+  },
+  "intrinsics_ok": true,
+  "fps": 29.4,
+  "mean_sync_gap_ms": 1.1,
+  "large_sync_gaps": 0,
+  "non_monotonic_ts": 0,
+  "depth_valid_pct": 62.8
+}
