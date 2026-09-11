@@ -1,7 +1,7 @@
 # Walker-Gait Data Collection
 
 Structured recording system for post-stroke gait analysis using an Orbbec Femto Bolt
-depth camera mounted on a rollator walker. Records synchronized RGB + depth video at
+depth camera mounted on a Evolution Mini Trillium rollator walker. Records synchronized RGB + depth video at
 30 fps across a six-block walking protocol.
 
 ---
@@ -15,7 +15,7 @@ cd C:\Users\hanna\Documents\USRA\data-collection
 # Test the camera first
 python scripts/test_cam_full.py
 
-# Run the protocol
+# Run the protocol, e.g. for participant id, session 1, hemiplegic side right
 python scripts/run_protocol.py --participant <id> --session-id 1 --affected-side right
 ```
 
@@ -119,13 +119,11 @@ is available.
 
 ## Before You Record
 
-- [ ] Wear tight, light-coloured clothing (shorts preferred)
-- [ ] Light-coloured socks or bare feet — avoid dark shoes
 - [ ] Camera mounted and USB 3.0 connected
 - [ ] `test_cam_full.py` passes all six checks
-- [ ] ArUco markers taped at 2m and 12m
+- [ ] ArUco markers taped at 2m and 12m (not used in pilot trials)
 - [ ] Metronome app on phone set to correct BPM for the condition
-- [ ] 3 practice walks at comfortable pace before Block 1
+- [ ] Practice mimcry walks at comfortable pace before trial (can redo trials if necessary)
 
 ---
 
