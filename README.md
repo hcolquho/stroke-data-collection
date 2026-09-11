@@ -66,6 +66,8 @@ python scripts/detect_timing_marks.py --session data/raw_video/aruco_test --visu
 Both marker IDs must appear in the terminal output and the 10MWT speed
 must be between 0.5 and 1.8 m/s for a comfortable walk.
 
+**NOTE:** markers were reliable at lower walking speeds, but often appeared blurry in frames at higher speeds. For ease of use, during pilot data collection, manual stopping was used to log trials.
+
 ---
 
 ## Recording Duration Reference
